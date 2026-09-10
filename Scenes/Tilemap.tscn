@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b2apjuhso4xrd"]
+
+[sub_resource type="TileSet" id="TileSet_6whob"]
+
+[node name="Tilemap" type="Node2D" unique_id=246501394]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=1842316426]
+tile_set = SubResource("TileSet_6whob")
+format = 2
