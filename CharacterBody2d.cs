@@ -38,3 +38,5 @@ public partial class CharacterBody2d : CharacterBody2D
 		MoveAndSlide();
 	}
 }
+[Export]
+public AnimatedSpite2D

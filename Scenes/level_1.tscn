@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cox6wf2jyg44l"]
+
+[ext_resource type="PackedScene" uid="uid://b2apjuhso4xrd" path="res://Scenes/Tilemap.tscn" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://d4cxq3lqf46lp" path="res://Scenes/node_2d.tscn" id="2_8ffim"]
+
+[node name="Level 1" type="Node2D" unique_id=1718419824]
+
+[node name="Tilemap" parent="." unique_id=246501394 instance=ExtResource("1_vk57k")]
+position = Vector2(-94, -6)
+
+[node name="Player" parent="." unique_id=650052858 instance=ExtResource("2_8ffim")]
+position = Vector2(-100, 62)
