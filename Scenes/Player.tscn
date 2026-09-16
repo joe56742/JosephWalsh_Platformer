@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://d4cxq3lqf46lp"]
 
 [ext_resource type="Script" uid="uid://cn7v427yrpe72" path="res://CharacterBody2d.cs" id="1_v1qfn"]
-[ext_resource type="Texture2D" uid="uid://bits0s5qla7wd" path="res://Assets/IDLE.png" id="2_v1qfn"]
-[ext_resource type="Texture2D" uid="uid://c8lvih0bwm725" path="res://Assets/RUN.png" id="3_hh5uf"]
+[ext_resource type="Texture2D" uid="uid://bits0s5qla7wd" path="res://Assets/Samurai/IDLE.png" id="2_v1qfn"]
+[ext_resource type="Texture2D" uid="uid://c8lvih0bwm725" path="res://Assets/Samurai/RUN.png" id="3_hh5uf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hh5uf"]
 atlas = ExtResource("2_v1qfn")
@@ -205,8 +205,9 @@ height = 22.0
 
 [node name="Player" type="Node2D" unique_id=650052858]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=443321535]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=443321535 node_paths=PackedStringArray("Sprite")]
 script = ExtResource("1_v1qfn")
+Sprite = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=992362581]
 position = Vector2(-9.937498, -11.250001)
