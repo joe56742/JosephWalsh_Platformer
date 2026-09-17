@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dxlvqo4e3lc4m"]
+
+[node name="Death Plane" type="Area2D" unique_id=1097636800]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1632534225]

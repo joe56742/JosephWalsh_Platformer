@@ -221,4 +221,4 @@ position = Vector2(-10, 0)
 shape = SubResource("CapsuleShape2D_g1q22")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=577382466]
-zoom = Vector2(2, 2)
+zoom = Vector2(2.75, 2.75)

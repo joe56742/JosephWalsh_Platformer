@@ -33,10 +33,17 @@ public partial class CharacterBody2d : CharacterBody2D
 		if (direction != Vector2.Zero)
 		{
 			velocity.X = direction.X * Speed;
+			Sprite.Play("Run");
+			
+			if (direction.X > 0)
+				Sprite.FlipH = false;
+			else
+				Sprite.FlipH = true;
 		}
 		else
 		{
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+			Sprite.Play("Idle");
 		}
 
 		Velocity = velocity;

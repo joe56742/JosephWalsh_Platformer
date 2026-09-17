@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b433dtx0lyndd"]
+
+[ext_resource type="Script" uid="uid://cm2n8llunbd8" path="res://Door.cs" id="1_gf172"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1q22"]
+
+[node name="Level End" type="Area2D" unique_id=94765756]
+script = ExtResource("1_gf172")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1368836189]
+shape = SubResource("RectangleShape2D_g1q22")
