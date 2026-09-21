@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b2apjuhso4xrd" path="res://Scenes/Tilemap.tscn" id="1_vk57k"]
 [ext_resource type="PackedScene" uid="uid://d4cxq3lqf46lp" path="res://Scenes/Player.tscn" id="2_8ffim"]
+[ext_resource type="PackedScene" uid="uid://btiwaw1ou41lw" path="res://Scenes/enemy.tscn" id="3_xfk5q"]
 
 [node name="Level 1" type="Node2D" unique_id=1718419824]
 
@@ -10,3 +11,6 @@ position = Vector2(-94, -6)
 
 [node name="Player" parent="." unique_id=650052858 instance=ExtResource("2_8ffim")]
 position = Vector2(-67, -55)
+
+[node name="Enemy" parent="." unique_id=1282440964 instance=ExtResource("3_xfk5q")]
+position = Vector2(-28, -51)
