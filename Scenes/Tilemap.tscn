@@ -177,18 +177,18 @@ region_enabled = true
 region_rect = Rect2(0, 0, 1280, 384)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Parallax2D" unique_id=1716241034]
-position = Vector2(269.50003, 90.00001)
-scale = Vector2(1.5484376, 1.3645834)
+position = Vector2(85.500015, 131.50002)
+scale = Vector2(0.9734376, 1.1484375)
 texture = ExtResource("2_rdtdr")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Parallax2D" unique_id=60845570]
-position = Vector2(275.00003, 103.999985)
-scale = Vector2(1.5750002, 1.3489584)
+position = Vector2(92.500015, 186.49998)
+scale = Vector2(1.0046877, 0.9192709)
 texture = ExtResource("3_snjhs")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Parallax2D" unique_id=880551153]
-position = Vector2(272, 144.00002)
-scale = Vector2(1.5749999, 1.1250001)
+position = Vector2(88.000015, 174.00003)
+scale = Vector2(1, 0.9687502)
 texture = ExtResource("4_ao201")
 
 [node name="TileMap" type="TileMapLayer" parent="." unique_id=2083696087]
