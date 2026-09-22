@@ -3,10 +3,6 @@
 [ext_resource type="Script" uid="uid://dvs22034mljdi" path="res://Scenes/Enemy.cs" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://bss78v378fdqa" path="res://Assets/Necromancer_creativekind-Sheet.png" id="2_1f0kj"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hghv2"]
-radius = 9.0
-height = 22.0
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_afpow"]
 atlas = ExtResource("2_1f0kj")
 region = Rect2(0, 128, 160, 128)
@@ -71,14 +67,15 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hghv2"]
+radius = 9.0
+height = 22.0
+
 [node name="Enemy" type="CharacterBody2D" unique_id=1282440964]
 script = ExtResource("1_1f0kj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=42948590]
-shape = SubResource("CapsuleShape2D_hghv2")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D" unique_id=1497278856]
-position = Vector2(0, -13)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1497278856]
+position = Vector2(-3, -17)
 scale = Vector2(0.45292968, 0.44921872)
 sprite_frames = SubResource("SpriteFrames_ne65n")
 animation = &"Run"
@@ -86,5 +83,9 @@ autoplay = "Run"
 frame = 1
 frame_progress = 0.39454898
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=42948590]
+position = Vector2(-3, -3)
+shape = SubResource("CapsuleShape2D_hghv2")
+
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1395820730]
-target_position = Vector2(14, 15)
+target_position = Vector2(17, 7)

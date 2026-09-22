@@ -13,4 +13,4 @@ position = Vector2(-94, -6)
 position = Vector2(-67, -55)
 
 [node name="Enemy" parent="." unique_id=1282440964 instance=ExtResource("3_xfk5q")]
-position = Vector2(-28, -51)
+position = Vector2(-27, -44)
