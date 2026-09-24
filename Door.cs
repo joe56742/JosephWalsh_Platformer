@@ -3,14 +3,20 @@ using System;
 
 public partial class Door : Area2D
 {
-	[Export]
-	public string LevelToLoad;
-	//public void OnPlayerEntered(Node2D node);
-	//{
-		//if (node is Player)
-		//GetTree().ChangeSceneToFile(LevelToLoad);
-	//}
-	// Called when the node enters the scene tree for the first time.
+	object node;
+	[Export] public string LevelToLoad;
+	private void OnPlayerEntered(Node2D node)
+	{
+		
+		if (node is CharacterBody2D) ;
+		{
+			GetTree().ChangeSceneToFile(LevelToLoad);
+		}
+	}
+
+
+
+	//Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}

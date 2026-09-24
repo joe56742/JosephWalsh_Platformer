@@ -7,5 +7,9 @@
 [node name="Level End" type="Area2D" unique_id=94765756]
 script = ExtResource("1_gf172")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1805723305]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1368836189]
 shape = SubResource("RectangleShape2D_g1q22")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -3,14 +3,22 @@
 [ext_resource type="PackedScene" uid="uid://b2apjuhso4xrd" path="res://Scenes/Tilemap.tscn" id="1_vk57k"]
 [ext_resource type="PackedScene" uid="uid://d4cxq3lqf46lp" path="res://Scenes/Player.tscn" id="2_8ffim"]
 [ext_resource type="PackedScene" uid="uid://btiwaw1ou41lw" path="res://Scenes/enemy.tscn" id="3_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://dxlvqo4e3lc4m" path="res://death_plane.tscn" id="4_7p6j4"]
+[ext_resource type="PackedScene" uid="uid://b433dtx0lyndd" path="res://area_2d.tscn" id="5_6444e"]
 
 [node name="Level 1" type="Node2D" unique_id=1718419824]
 
 [node name="Tilemap" parent="." unique_id=246501394 instance=ExtResource("1_vk57k")]
-position = Vector2(-94, -6)
+position = Vector2(-99, -12)
 
 [node name="Player" parent="." unique_id=650052858 instance=ExtResource("2_8ffim")]
 position = Vector2(-67, -55)
 
 [node name="Enemy" parent="." unique_id=1282440964 instance=ExtResource("3_xfk5q")]
 position = Vector2(-27, -44)
+
+[node name="Death Plane" parent="." unique_id=1097636800 instance=ExtResource("4_7p6j4")]
+position = Vector2(-3162, -946)
+
+[node name="Level End" parent="." unique_id=94765756 instance=ExtResource("5_6444e")]
+position = Vector2(3761, -69)

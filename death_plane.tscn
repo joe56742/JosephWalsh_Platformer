@@ -1,5 +1,17 @@
 [gd_scene format=3 uid="uid://dxlvqo4e3lc4m"]
 
+[ext_resource type="Script" uid="uid://big1pb6hsxyjy" path="res://DeathPlane.cs" id="1_5krli"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5krli"]
+size = Vector2(5646.5, 63.5)
+
 [node name="Death Plane" type="Area2D" unique_id=1097636800]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_5krli")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1632534225]
+position = Vector2(4940.75, 1171.75)
+shape = SubResource("RectangleShape2D_5krli")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
