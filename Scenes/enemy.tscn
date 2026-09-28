@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btiwaw1ou41lw"]
 
-[ext_resource type="Script" uid="uid://dvs22034mljdi" path="res://Scenes/Enemy.cs" id="1_1f0kj"]
+[ext_resource type="Script" uid="uid://dvs22034mljdi" path="res://Scripts/Enemy.cs" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://bss78v378fdqa" path="res://Assets/Necromancer_creativekind-Sheet.png" id="2_1f0kj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_afpow"]

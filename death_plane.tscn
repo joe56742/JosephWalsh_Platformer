@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxlvqo4e3lc4m"]
 
-[ext_resource type="Script" uid="uid://big1pb6hsxyjy" path="res://DeathPlane.cs" id="1_5krli"]
+[ext_resource type="Script" uid="uid://big1pb6hsxyjy" path="res://Scripts/DeathPlane.cs" id="1_5krli"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5krli"]
 size = Vector2(5646.5, 63.5)

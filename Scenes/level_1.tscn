@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d4cxq3lqf46lp" path="res://Scenes/Player.tscn" id="2_8ffim"]
 [ext_resource type="PackedScene" uid="uid://btiwaw1ou41lw" path="res://Scenes/enemy.tscn" id="3_xfk5q"]
 [ext_resource type="PackedScene" uid="uid://dxlvqo4e3lc4m" path="res://death_plane.tscn" id="4_7p6j4"]
-[ext_resource type="PackedScene" uid="uid://b433dtx0lyndd" path="res://area_2d.tscn" id="5_6444e"]
+[ext_resource type="PackedScene" uid="uid://b433dtx0lyndd" path="res://Scenes/area_2d.tscn" id="5_6444e"]
 
 [node name="Level 1" type="Node2D" unique_id=1718419824]
 
@@ -15,10 +15,11 @@ position = Vector2(-99, -12)
 position = Vector2(-67, -55)
 
 [node name="Enemy" parent="." unique_id=1282440964 instance=ExtResource("3_xfk5q")]
-position = Vector2(-27, -44)
+position = Vector2(-27, -49)
 
 [node name="Death Plane" parent="." unique_id=1097636800 instance=ExtResource("4_7p6j4")]
 position = Vector2(-3162, -946)
 
 [node name="Level End" parent="." unique_id=94765756 instance=ExtResource("5_6444e")]
-position = Vector2(3761, -69)
+position = Vector2(3757, -72)
+LevelToLoad = "res://Scenes/area_2d.tscn"

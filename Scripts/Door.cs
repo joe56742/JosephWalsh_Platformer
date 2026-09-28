@@ -4,11 +4,10 @@ using System;
 public partial class Door : Area2D
 {
 	object node;
-	[Export] public string LevelToLoad;
+	[Export] public string LevelToLoad;  
 	private void OnPlayerEntered(Node2D node)
 	{
-		
-		if (node is CharacterBody2D) ;
+		if (node is CharacterBody2D)  ;
 		{
 			GetTree().ChangeSceneToFile(LevelToLoad);
 		}
