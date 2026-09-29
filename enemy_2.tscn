@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://btj4i1y6rtyv1"]
+
+[ext_resource type="Texture2D" uid="uid://caxeniwgjyt81" path="res://Assets/demon_slime_FREE_v1.0_288x160_spritesheet.png" id="1_867ty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk1o8"]
+atlas = ExtResource("1_867ty")
+region = Rect2(0, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v280p"]
+atlas = ExtResource("1_867ty")
+region = Rect2(288, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8cyx"]
+atlas = ExtResource("1_867ty")
+region = Rect2(576, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44qal"]
+atlas = ExtResource("1_867ty")
+region = Rect2(864, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voprt"]
+atlas = ExtResource("1_867ty")
+region = Rect2(1152, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vf7q"]
+atlas = ExtResource("1_867ty")
+region = Rect2(1440, 0, 288, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g1q22"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk1o8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v280p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c8cyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44qal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voprt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vf7q")
+}],
+"loop": 2,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g1q22"]
+radius = 49.0
+height = 144.0
+
+[node name="Enemy2" type="CharacterBody2D" unique_id=70685496]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1333229808]
+sprite_frames = SubResource("SpriteFrames_g1q22")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1156272277]
+position = Vector2(1, 26)
+shape = SubResource("CapsuleShape2D_g1q22")
