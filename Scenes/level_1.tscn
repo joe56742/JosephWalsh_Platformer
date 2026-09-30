@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cox6wf2jyg44l"]
+
+[ext_resource type="PackedScene" uid="uid://b2apjuhso4xrd" path="res://Scenes/Tilemap.tscn" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://d4cxq3lqf46lp" path="res://Scenes/Player.tscn" id="2_8ffim"]
+[ext_resource type="PackedScene" uid="uid://btiwaw1ou41lw" path="res://Scenes/enemy.tscn" id="3_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://b433dtx0lyndd" path="res://Scenes/area_2d.tscn" id="5_6444e"]
+
+[node name="Level 1" type="Node2D" unique_id=1718419824]
+
+[node name="Tilemap" parent="." unique_id=246501394 instance=ExtResource("1_vk57k")]
+position = Vector2(-99, -12)
+
+[node name="Player" parent="." unique_id=650052858 instance=ExtResource("2_8ffim")]
+position = Vector2(-62, -56)
+
+[node name="Enemy" parent="." unique_id=1282440964 instance=ExtResource("3_xfk5q")]
+position = Vector2(-27, -49)
+
+[node name="Level End" parent="." unique_id=94765756 instance=ExtResource("5_6444e")]
+position = Vector2(3757, -72)
+LevelToLoad = "res://Scenes/Level_2.tscn"
