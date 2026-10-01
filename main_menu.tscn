@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bxtyfo1fbee7j"]
+
+[ext_resource type="Script" uid="uid://d3xprnskyoiq5" path="res://Scripts/MainMenu.cs" id="1_06t4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(1, 0.97084373, 0.96614355, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Main_menu" type="Control" unique_id=582738260]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Panel" type="Panel" parent="." unique_id=2100488179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=169783570]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -130.5
+offset_right = 225.0
+offset_bottom = 130.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=297556839]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=705273011]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Settings"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1707265274]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=2138659491]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -368.75
+offset_top = 41.0
+offset_right = 364.25
+offset_bottom = 178.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 100
+text = "Platform Game"
+horizontal_alignment = 1
+vertical_alignment = 1
